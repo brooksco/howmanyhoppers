@@ -1,17 +1,18 @@
 var hopperCount = 0;
+var crossOriginProxy = 'http://localhost/howmanyhoppers/ba-simple-proxy.php?url=';
 
 $(document).foundation();
 
 $(document).ready(function() {
-	collectionCall("https://crossorigin.me/http://collection.whitney.org/json/groups/5/?page=1&format=json");
+	collectionCall(crossOriginProxy + "http://collection.whitney.org/json/groups/5/?page=1&format=json");
 });
 
 function collectionCall(url) {
 	$.getJSON(url, function(json){
-		console.log(json);
+		console.log(json['contents']);
 
-		var objects = json['group_objects']['results'];
-		var next = json['group_objects']['next'];
+		var objects = json['contents']['group_objects']['results'];
+		var next = json['contents']['group_objects']['next'];
 
 		objects.forEach(function (object) {
 			if (object['artist_name'] == 'Edward Hopper') {
@@ -21,7 +22,9 @@ function collectionCall(url) {
 		});
 
 		if (next) {
-			collectionCall('https://crossorigin.me/' + next);
+			collectionCall(crossOriginProxy + next);
+		} else {
+			$('#hopper__count').html(hopperCount);
 		}
 
 	});
