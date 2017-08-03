@@ -5,6 +5,8 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>How many Hoppers?</title>
+  <meta name="description" content="The current number of Hoppers on view at the Whitney Museum of American Art." />
+  
   <link rel="stylesheet" href="css/app.css">
 </head>
 <body>
