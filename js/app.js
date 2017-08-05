@@ -1,5 +1,5 @@
 var hopperCount = 0;
-var crossOriginProxy = 'http://howmanyhoppers.com/ba-simple-proxy.php?url=';
+var crossOriginProxy = 'https://howmanyhoppers.com/ba-simple-proxy.php?url=';
 
 $(document).foundation();
 
