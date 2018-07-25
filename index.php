@@ -21,7 +21,7 @@
 <body>
 
   <div id="hopper">
-    <p id="hopper__question">**How many Hoppers?</p>
+    <p id="hopper__question">*How many Hoppers?</p>
     <p id="hopper__count">...</p>
   </div>
 
