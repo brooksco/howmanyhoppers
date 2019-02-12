@@ -6,7 +6,7 @@ var crossOriginProxy = 'https://howmanyhoppers.com/ba-simple-proxy.php?url=';
 $(document).foundation();
 
 $(document).ready(function() {
-	collectionCall(crossOriginProxy + "http://collection.whitney.org/json/groups/5/?page=1&format=json");
+	collectionCall(crossOriginProxy + "http://api.collection.whitney.org/groups/5/?page=1&format=json");
 });
 
 function collectionCall(url) {
