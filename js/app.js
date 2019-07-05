@@ -1,7 +1,8 @@
-var hopperCount = 0;
-// var crossOriginProxy = 'https://howmanyhoppers.com/ba-simple-proxy.php?url=';
-// Development
-var crossOriginProxy = '/howmanyhoppers/ba-simple-proxy.php?url=';
+let hopperCount = 0;
+let crossOriginProxy = '/ba-simple-proxy.php?url=';
+if (window.location.hostname == 'localhost') {
+	crossOriginProxy = '/howmanyhoppers/ba-simple-proxy.php?url=';
+}
 
 $(document).ready(function() {
 	collectionCall(crossOriginProxy + "http://api.collection.whitney.org/groups/5/?page=1&format=json");
