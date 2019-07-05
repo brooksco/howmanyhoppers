@@ -1,31 +1,32 @@
 {
-  "name": "foundation-sites-template",
+  "name": "howmanyhoppers",
   "version": "1.0.0",
-  "description": "Basic template for a new Foundation for Sites project.",
+  "description": "A count of how many Hoppers are on view at the Whitney.",
   "main": "gulpfile.js",
-  "devDependencies": {
-    "gulp": "^3.9.0",
-    "gulp-autoprefixer": "^3.1.0",
-    "gulp-load-plugins": "^1.1.0",
-    "gulp-sass": "^3.1.0"
-  },
   "scripts": {
-    "start": "gulp",
-    "build": "gulp sass"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/zurb/foundation-sites-template.git"
+    "url": "git+https://github.com/brooksco/howmanyhoppers.git"
   },
+  "author": "Colin Brooks",
+  "license": "ISC",
   "bugs": {
-    "url": "https://github.com/zurb/foundation-sites/issues",
-    "email": "foundation@zurb.com"
+    "url": "https://github.com/brooksco/howmanyhoppers/issues"
   },
-  "author": "ZURB <foundation@zurb.com>",
-  "license": "MIT",
-  "private": true,
+  "homepage": "https://github.com/brooksco/howmanyhoppers#readme",
   "dependencies": {
-    "gulp-autoprefixer": "^3.1.0",
-    "npm": "^5.8.0"
-  }
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-load-plugins": "^2.0.0",
+    "gulp-sass": "^4.0.2",
+    "jquery": "^3.4.1"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "> 1%",
+    "maintained node versions",
+    "not dead"
+  ]
 }

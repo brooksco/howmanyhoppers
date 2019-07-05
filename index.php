@@ -9,26 +9,26 @@
 
   <link rel="stylesheet" href="css/app.css">
   <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-41574595-6', 'auto');
-  ga('send', 'pageview');
+    ga('create', 'UA-41574595-6', 'auto');
+    ga('send', 'pageview');
   </script>
 </head>
 <body>
 
-  <div id="hopper">
-    <p id="hopper__question">How many Hoppers?</p>
-    <p id="hopper__count">...</p>
+  <div class="hopper">
+    <a href="https://whitney.org/collection/works?q%5Bsearch_cont%5D=Edward%20Hopper&q%5Bon_view_true%5D=1" rel="noopener">
+      <h1 class="hopper__question">How many Hoppers?</h1>
+      <p class="hopper__count">...</p>
+    </a>
   </div>
 
-<script src="bower_components/jquery/dist/jquery.js"></script>
-<script src="bower_components/what-input/dist/what-input.js"></script>
-<script src="bower_components/foundation-sites/dist/js/foundation.js"></script>
-<script src="js/app.js"></script>
+  <script src="node_modules/jquery/dist/jquery.js"></script>
+  <script src="js/app.js"></script>
 
 </body>
 </html>

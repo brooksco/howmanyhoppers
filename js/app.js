@@ -1,9 +1,7 @@
 var hopperCount = 0;
-var crossOriginProxy = 'https://howmanyhoppers.com/ba-simple-proxy.php?url=';
+// var crossOriginProxy = 'https://howmanyhoppers.com/ba-simple-proxy.php?url=';
 // Development
-// var crossOriginProxy = '/howmanyhoppers/ba-simple-proxy.php?url=';
-
-$(document).foundation();
+var crossOriginProxy = '/howmanyhoppers/ba-simple-proxy.php?url=';
 
 $(document).ready(function() {
 	collectionCall(crossOriginProxy + "http://api.collection.whitney.org/groups/5/?page=1&format=json");
@@ -19,14 +17,14 @@ function collectionCall(url) {
 		objects.forEach(function (object) {
 			if (object['artist_name'] == 'Edward Hopper') {
 				hopperCount += 1;
-				$('#hopper__count').html(hopperCount);
+				$('.hopper__count').html(hopperCount);
 			}
 		});
 
 		if (next) {
 			collectionCall(crossOriginProxy + next);
 		} else {
-			$('#hopper__count').html(hopperCount);
+			$('.hopper__count').html(hopperCount);
 		}
 
 	});
