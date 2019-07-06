@@ -22,7 +22,7 @@
 
   <div class="hopper">
     <a href="https://whitney.org/collection/works?q%5Bsearch_cont%5D=Edward%20Hopper&q%5Bon_view_true%5D=1" rel="noopener">
-      <h1 class="hopper__question">How many Hoppers?</h1>
+      <h1 class="hopper__question">How many Hoppers are at the Whitney?</h1>
       <p class="hopper__count">...</p>
     </a>
   </div>
