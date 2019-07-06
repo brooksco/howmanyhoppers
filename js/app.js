@@ -37,6 +37,5 @@ document.addEventListener('DOMContentLoaded', function(event) {
 
 	const dateDay = new Date().getDay();
 	const bodyClass = 'gradient-' + dateDay;
-
 	document.body.classList.add(bodyClass);
 });

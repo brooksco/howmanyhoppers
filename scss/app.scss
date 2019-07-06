@@ -1,5 +1,6 @@
 :root {
 	--text-color: #FFFFFF;
+	--transition: all 200ms ease-out;
 }
 
 html,
@@ -65,7 +66,7 @@ body {
 	a {
 		text-decoration: none;
 		color: var(--text-color);
-		transition: all 200ms ease-out;
+		transition: var(--transition);
 
 		&:hover {
 			opacity: .75;
@@ -73,12 +74,14 @@ body {
 	}
 
 	&__question {
+		transition: var(--transition);
 		font-weight: normal;
 		font-size: 2rem;
 		z-index: 1;
 	}
 
 	&__count {
+		transition: var(--transition);
 		font-size: 60vh;
 		line-height: .9;
 		margin: 0;
