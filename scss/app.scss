@@ -1,4 +1,6 @@
-@charset 'utf-8';
+:root {
+	--text-color: #FFFFFF;
+}
 
 html,
 body {
@@ -8,6 +10,48 @@ body {
 	height: 100%;
 	padding: 0;
 	margin: 0;
+}
+
+.gradient-1 {
+	// Red Sunset
+	background: -webkit-linear-gradient(to right, #C06C84, #6C5B7B, #355C7D);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #C06C84, #6C5B7B, #355C7D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.gradient-2 {
+	// Sea Blue
+	background: -webkit-linear-gradient(to right, #4e4376, #2b5876);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #4e4376, #2b5876); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.gradient-3 {
+	// Moss
+	background: -webkit-linear-gradient(to right, #71B280, #134E5E);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #71B280, #134E5E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.gradient-4 {
+	// Grapefruit Sunset
+	background: -webkit-linear-gradient(to right, #904e95, #e96443);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #904e95, #e96443); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.gradient-5 {
+	// Moonlit Asteriod
+	background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.gradient-6 {
+	// Dusk
+	background: -webkit-linear-gradient(to right, #FD746C, #2C3E50);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #FD746C, #2C3E50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.gradient-7 {
+	// Royal
+	background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .hopper {
@@ -20,7 +64,7 @@ body {
 
 	a {
 		text-decoration: none;
-		color: #000000;
+		color: var(--text-color);
 		transition: all 200ms ease-out;
 
 		&:hover {

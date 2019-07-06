@@ -34,4 +34,9 @@ function collectionCall(url) {
 
 document.addEventListener('DOMContentLoaded', function(event) { 
 	collectionCall(crossOriginProxy + 'http://api.collection.whitney.org/groups/5/?page=1&format=json');
+
+	const dateDay = new Date().getDay();
+	const bodyClass = 'gradient-' + dateDay;
+
+	document.body.classList.add(bodyClass);
 });
